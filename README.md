@@ -1,5 +1,5 @@
-### nightharbor-s3-reporter
-
+# nightharbor-s3-reporter
+[![CircleCI](https://circleci.com/gh/YoshiyukiKato/nightharbor-s3-reporter.svg?style=svg)](https://circleci.com/gh/YoshiyukiKato/nightharbor-s3-reporter)
 [![Greenkeeper badge](https://badges.greenkeeper.io/YoshiyukiKato/nightharbor-s3-reporter.svg)](https://greenkeeper.io/)
 
 A [nightharbor](https://github.com/YoshiyukiKato/nightharbor) reporter for AWS S3.
@@ -19,7 +19,7 @@ const s3 = new AWS.S3();
 export default {
   ...,
   reporters: [
-    new S3JsonReporter(s3, "bucket name", "/path/to/output.csv"),
+    new S3JsonReporter(s3, "bucket name", "/path/to/output.json"),
     new S3CsvReporter(s3, "bucket name", "/path/to/output.csv")
   ]
   ...
