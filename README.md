@@ -1,4 +1,4 @@
-### nightharbor-s3-reporter
+# nightharbor-s3-reporter
 A [nightharbor](https://github.com/YoshiyukiKato/nightharbor) reporter for AWS S3.
 
 ```sh
@@ -16,7 +16,7 @@ const s3 = new AWS.S3();
 export default {
   ...,
   reporters: [
-    new S3JsonReporter(s3, "bucket name", "/path/to/output.csv"),
+    new S3JsonReporter(s3, "bucket name", "/path/to/output.json"),
     new S3CsvReporter(s3, "bucket name", "/path/to/output.csv")
   ]
   ...
