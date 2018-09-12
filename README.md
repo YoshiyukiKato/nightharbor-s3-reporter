@@ -1,4 +1,7 @@
 # nightharbor-s3-reporter
+[![CircleCI](https://circleci.com/gh/YoshiyukiKato/nightharbor-s3-reporter.svg?style=svg)](https://circleci.com/gh/YoshiyukiKato/nightharbor-s3-reporter)
+[![Greenkeeper badge](https://badges.greenkeeper.io/YoshiyukiKato/nightharbor-s3-reporter.svg)](https://greenkeeper.io/)
+
 A [nightharbor](https://github.com/YoshiyukiKato/nightharbor) reporter for AWS S3.
 
 ```sh
