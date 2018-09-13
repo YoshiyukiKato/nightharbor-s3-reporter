@@ -5,7 +5,7 @@
   "author": "Yoshiyuki Kato",
   "peerDependencies": {
     "aws-sdk": "^2.309.0",
-    "nightharbor": "*"
+    "nightharbor": "^0.5.3"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
@@ -50,13 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YoshiyukiKato/nightharbor"
+    "url": "https://github.com/YoshiyukiKato/nightharbor-s3-reporeter"
   },
   "scripts": {
     "build": "$(npm bin)/tsc --build tsconfig.json",
     "watch": "$(npm bin)/tsc --build tsconfig.json -w",
     "test": "$(npm bin)/nyc $(npm bin)/mocha --timeout 600000 test/**/*.test.ts",
-    "report-coverage": "$(npm bin)/nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "release": "npm run before-release && npm publish dist && npm run after-release ",
     "release-a": "npm run before-release && npm publish dist --tag alpha && npm run after-release ",
     "release-b": "npm run before-release && npm publish dist --tag beta && npm run after-release ",
