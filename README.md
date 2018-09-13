@@ -1,4 +1,7 @@
 # nightharbor-s3-reporter
+[![CircleCI](https://circleci.com/gh/YoshiyukiKato/nightharbor-s3-reporter.svg?style=svg)](https://circleci.com/gh/YoshiyukiKato/nightharbor-s3-reporter)
+[![sonarcloud badge](https://sonarcloud.io/api/project_badges/measure?project=YoshiyukiKato_nightharbor-s3-reporter&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=YoshiyukiKato_nightharbor-s3-reporter&metric=alert_status)
+
 A [nightharbor](https://github.com/YoshiyukiKato/nightharbor) reporter for AWS S3.
 
 ```sh
