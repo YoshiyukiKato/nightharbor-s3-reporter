@@ -1,5 +1,5 @@
 import {Server} from "http";
-import S3rver from 's3rver';
+import S3rver from "s3rver";
 
 export class S3Local{
   private process?: Server;
@@ -7,31 +7,31 @@ export class S3Local{
 
   constructor(s3host, s3port, s3dir){
     this.s3rver = new S3rver({
+      directory: s3dir,
       hostname: s3host,
       port: s3port,
-      directory: s3dir,
-      silent: true
+      silent: true,
     });
   }
 
-  up(){
+  public up() {
     return new Promise((resolve, reject) => {
       this.process = this.s3rver.run((err) => {
-        if(err){
+        if (err) {
           reject(err);
-        }else{
+        } else {
           resolve(this);
         }
       });
     });
   }
 
-  down(){
+  public down() {
     return new Promise((resolve, reject) => {
-      if(this.process){
+      if (this.process) {
         this.process.close();
         resolve();
-      }else{
+      } else {
         reject(new Error("process is not activated"));
       }
     });
