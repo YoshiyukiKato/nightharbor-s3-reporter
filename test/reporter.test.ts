@@ -46,7 +46,6 @@ describe("AWS S3 reporters", () => {
     const reporter = new S3JsonReporter(s3, bucketName, key);
     const data = { message: "test" };
     const expected = { results: [data] };
-    reporter.open();
     reporter.write(data);
     return reporter.close()
       .then(() => {
@@ -62,7 +61,6 @@ describe("AWS S3 reporters", () => {
     const reporter = new S3CsvReporter(s3, bucketName, key);
     const data = { message: "test" };
     const expected = [data];
-    reporter.open();
     reporter.write(data);
     return reporter.close()
       .then(() => {
