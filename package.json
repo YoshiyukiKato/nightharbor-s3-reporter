@@ -1,7 +1,7 @@
 {
   "name": "nightharbor-s3-reporter",
   "description": "nightharbor reporter for aws s3",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Yoshiyuki Kato",
   "peerDependencies": {
     "aws-sdk": "^2.309.0",
