@@ -14,10 +14,6 @@ export default class S3Reporter implements IReporter {
     this.body = "";
   }
 
-  public open(): void {
-    return;
-  }
-
   public write(result: any): void {
     return;
   }
