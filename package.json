@@ -14,7 +14,7 @@
     "@types/s3rver": "0.0.30",
     "aws-sdk": "^2.309.0",
     "csvtojson": "^2.0.8",
-    "espower-typescript": "^9.0.1",
+    "espower-typescript": "^9.0.2",
     "fs-extra": "^7.0.0",
     "mocha": "^5.2.0",
     "nightharbor": "^0.7.0",
